@@ -34,12 +34,12 @@ function listingPets(){
 //Validating the data
 function validatingDataPets(newPet){
     return (
-    newPet.name != "undefined" && 
-    newPet.type != "undefined" && 
-    newPet.race != "undefined" && 
-    newPet.age != "undefined" && 
-    newPet.gender != "undefined" && 
-    newPet.vaccinated != "undefined"
+    newPet.name && 
+    newPet.type && 
+    newPet.race && 
+    newPet.age && 
+    newPet.gender && 
+    typeof (newPet.vaccinated) == 'boolean' // validating if the type of the propertie is boolean.
     ) 
 };
 
@@ -87,7 +87,7 @@ let newPetObjThree = { //New Pet 2
     vaccinated: false
 };
 
-addPet(newPetObj, newPetObjTwo, newPetObjThree); //adding objects to an array
+addPet(newPetObj); //adding an object to an array
 
 
 // Verifying if the Pet were Vaccinated 
@@ -119,3 +119,4 @@ function vaccinated(pets) {
 };
 
 vaccinated(pets);
+
