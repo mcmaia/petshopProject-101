@@ -120,3 +120,20 @@ function vaccinated(pets) {
 
 vaccinated(pets);
 
+// Services - using callback - bathing and trimming the pet
+
+// function service(pet, trim, bathe){
+//     typeService(pet)
+// };
+
+
+// function bathe(pet){
+//     console.log(pet + "was bathed successfully");
+// };
+
+
+// function trim(pet){
+//     console.log(pet + "was trimmed successfully");
+// };
+
+
